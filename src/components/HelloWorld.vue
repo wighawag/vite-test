@@ -6,8 +6,9 @@
 
 <script>
 // import {randomBytes} from "@ethersproject/random";
+import {createClient} from "@urql/core";
 function randomBytes() {
-  return "no"
+  return createClient({url: "http://localhost:8000"})
 }
 export default {
   name: 'HelloWorld',

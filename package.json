@@ -7,6 +7,8 @@
     "postinstall": "node fix_ethers_modules.js"
   },
   "dependencies": {
+    "@urql/core": "^1.12.3",
+    "graphql": "^15.3.0",
     "vue": "^3.0.0-rc.1"
   },
   "devDependencies": {
