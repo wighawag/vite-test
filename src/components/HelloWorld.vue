@@ -5,9 +5,9 @@
 </template>
 
 <script>
-// import {randomBytes} from "@ethersproject/random";
+import {Wallet} from "@ethersproject/wallet";
 function randomBytes() {
-  return "no"
+  return Wallet.createRandom().address
 }
 export default {
   name: 'HelloWorld',
