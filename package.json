@@ -7,7 +7,6 @@
     "postinstall": "node fix_ethers_modules.js"
   },
   "dependencies": {
-    "@ethersproject/random": "^5.0.2",
     "vue": "^3.0.0-rc.1"
   },
   "devDependencies": {

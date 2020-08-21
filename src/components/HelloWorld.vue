@@ -5,7 +5,10 @@
 </template>
 
 <script>
-import {randomBytes} from "@ethersproject/random";
+// import {randomBytes} from "@ethersproject/random";
+function randomBytes() {
+  return "no"
+}
 export default {
   name: 'HelloWorld',
   props: {
