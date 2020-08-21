@@ -1,0 +1,13 @@
+diff --git a/node_modules/vite/dist/node/resolver.js b/node_modules/vite/dist/node/resolver.js
+index 7170a99..313c7f5 100644
+--- a/node_modules/vite/dist/node/resolver.js
++++ b/node_modules/vite/dist/node/resolver.js
+@@ -17,7 +17,7 @@ const debug = require('debug')('vite:resolve');
+ const isWin = require('os').platform() === 'win32';
+ const pathSeparator = isWin ? '\\' : '/';
+ exports.supportedExts = ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json'];
+-exports.mainFields = ['module', 'jsnext', 'jsnext:main', 'browser', 'main'];
++exports.mainFields = ['browser.esm', 'module', 'jsnext', 'jsnext:main', 'browser', 'main'];
+ const defaultRequestToFile = (publicPath, root) => {
+     if (serverPluginModuleResolve_1.moduleRE.test(publicPath)) {
+         const id = publicPath.replace(serverPluginModuleResolve_1.moduleRE, '');
