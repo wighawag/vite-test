@@ -5,9 +5,9 @@
 </template>
 
 <script>
-// import {randomBytes} from "@ethersproject/random";
+import {JsonRpcProvider} from "@ethersproject/providers";
 function randomBytes() {
-  return "no"
+  return new JsonRpcProvider().connection
 }
 export default {
   name: 'HelloWorld',
