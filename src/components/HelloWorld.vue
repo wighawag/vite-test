@@ -6,8 +6,14 @@
 
 <script>
 // import {randomBytes} from "@ethersproject/random";
+import { SubscriptionClient } from 'subscriptions-transport-ws';
+const GRAPHQL_ENDPOINT = 'ws://localhost:3000/graphql';
+const client = new SubscriptionClient(GRAPHQL_ENDPOINT, {
+  reconnect: true,
+});
+
 function randomBytes() {
-  return "no"
+  return client.status;
 }
 export default {
   name: 'HelloWorld',
