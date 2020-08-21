@@ -7,7 +7,17 @@
     "postinstall": "node fix_ethers_modules.js"
   },
   "dependencies": {
-    "vue": "^3.0.0-rc.1"
+    "vue": "^3.0.0-rc.1",
+    "@curi/router": "^2.1.0",
+    "@ethersproject/bignumber": "^5.0.0-beta.139",
+    "@ethersproject/contracts": "^5.0.0-beta.153",
+    "@ethersproject/providers": "^5.0.0-beta.168",
+    "@hickory/browser": "^2.1.0",
+    "@urql/core": "^1.11.8",
+    "graphql": "^15.0.0",
+    "subscriptions-transport-ws": "^0.9.16",
+    "web3w": "^0.0.2",
+    "wonka": "^4.0.14"
   },
   "devDependencies": {
     "@vue/compiler-sfc": "^3.0.0-rc.1",

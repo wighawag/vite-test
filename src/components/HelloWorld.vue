@@ -6,8 +6,19 @@
 
 <script>
 // import {randomBytes} from "@ethersproject/random";
+import WalletStores from 'web3w';
+const {wallet, builtin, chain, transactions, balance} = WalletStores({
+  log: console,
+  debug: true,
+  options: [
+    'builtin',
+  ],
+  builtin: {autoProbe: true},
+});
+window.wallet = wallet;
+
 function randomBytes() {
-  return "no"
+  return wallet.address || "none"
 }
 export default {
   name: 'HelloWorld',
