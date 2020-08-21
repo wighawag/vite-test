@@ -5,9 +5,18 @@
 </template>
 
 <script>
-// import {randomBytes} from "@ethersproject/random";
+import WalletStores from "web3w";
+const walletStores = WalletStores({
+    log: console,
+    debug: true,
+    options: [
+      'builtin'
+    ],
+    builtin: {autoProbe: true},
+  });
+window.wallet = walletStores.wallet;
 function randomBytes() {
-  return "no"
+  return walletStores
 }
 export default {
   name: 'HelloWorld',
